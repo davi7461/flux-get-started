@@ -1,0 +1,28 @@
+piVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: demo
+  creationTimestamp: null
+  labels:
+    app: nginx
+  name: nginx
+  annotations:
+    fluxcd.io/automated: "true"
+    fluxcd.io/tag.nginx: semver:~1.17.9
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
+        resources: {}
+status: {}
