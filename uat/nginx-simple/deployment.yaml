@@ -1,8 +1,9 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   namespace: demo
-  creationTimestamp: null
+  creationTimestamp:
   labels:
     app: nginx
   name: nginx
@@ -17,12 +18,12 @@ spec:
   strategy: {}
   template:
     metadata:
-      creationTimestamp: null
+      creationTimestamp:
       labels:
         app: nginx
     spec:
       containers:
-      - image: nginx:1.17.9
+      - image: nginx:1.18-alpine-perl
         name: nginx
         resources: {}
 status: {}
