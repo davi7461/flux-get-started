@@ -23,5 +23,5 @@ spec:
       - image: gcr.io/devops-ps-uk-default/david-go-sample:0.1
         name: go-sample
         resources: {}
-      imagePullSecrets:
-        - name: gcr-json-key
+      # imagePullSecrets:
+      #   - name: gcr-json-key
