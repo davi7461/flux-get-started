@@ -3,11 +3,12 @@ kind: HelmRelease
 metadata:
   annotations:
     fluxcd.io/automated: "false"
-    filter.fluxcd.io/chart-image: semver:~0.4
+    filter.fluxcd.io/chart-image: semver:~1.24
   name: nginx
   namespace: nginx-ingress
 spec:
   chart:
     name: nginx-ingress
-    repository: https://helm.nginx.com/stable
+    repository: https://kubernetes-charts.storage.googleapis.com/
+    version: 1.24.0
   releaseName: nginx
