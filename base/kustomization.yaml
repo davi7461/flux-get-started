@@ -4,3 +4,4 @@ resources:
 - go-sample/deployment.yaml
 - go-sample/service.yaml
 - demo-ns.yaml
+- helm-releases/nginx.yaml
