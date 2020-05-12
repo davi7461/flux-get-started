@@ -8,7 +8,6 @@ metadata:
   namespace: nginx-ingress
 spec:
   chart:
-    name: nginx-stable
+    name: nginx-ingress
     repository: https://helm.nginx.com/stable
-    version: 0.4.1
   releaseName: nginx
