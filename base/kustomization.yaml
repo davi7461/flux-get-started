@@ -5,3 +5,4 @@ resources:
 - go-sample/service.yaml
 - demo-ns.yaml
 - helm-releases/nginx.yaml
+- helm-releases/external-dns.yaml

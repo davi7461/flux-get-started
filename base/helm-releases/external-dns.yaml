@@ -1,0 +1,14 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  annotations:
+    fluxcd.io/automated: "false"
+    filter.fluxcd.io/chart-image: semver:~2.22
+  name: external-dns
+  namespace: kube-system
+spec:
+  chart:
+    name: external-dns
+    repository: https://charts.bitnami.com/bitnami
+    version: 2.22.4
+  releaseName: external-dns

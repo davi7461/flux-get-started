@@ -1,0 +1,9 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: external-dns
+  namespace: kube-system
+spec:
+  values:
+    autoDiscovery:
+        provider: google
