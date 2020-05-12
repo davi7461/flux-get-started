@@ -7,7 +7,6 @@ metadata:
   name: go-sample
   annotations:
     fluxcd.io/automated: "true"
-    fluxcd.io/tag.go-sample: semver:~0.1
 spec:
   replicas: 1
   selector:
