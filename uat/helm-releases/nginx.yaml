@@ -1,0 +1,8 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  annotations:
+    fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: semver:~1.24
+  name: nginx
+  namespace: nginx-ingress
