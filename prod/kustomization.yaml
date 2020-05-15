@@ -4,4 +4,4 @@ bases:
 - ../base/
 
 patchesStrategicMerge:
-- deployment.yaml
+- go-sample/deployment.yaml
