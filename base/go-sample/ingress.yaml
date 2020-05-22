@@ -7,7 +7,7 @@ metadata:
   namespace: demo
 spec:
   rules:
-    - host: "*.com"
+    - host: "*.xip.io"
       http:
         paths:
           - path: /go-sample
