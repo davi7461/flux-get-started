@@ -12,5 +12,5 @@ patchesJson6902:
     version: v1beta1
     kind: Ingress
     name: ingress
-    path: ingress_patch.yaml
+  path: ingress_patch.yaml
     
