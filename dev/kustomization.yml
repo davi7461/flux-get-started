@@ -5,3 +5,12 @@ bases:
 patchesStrategicMerge:
 - go-sample/deployment.yaml
 - helm-releases/nginx.yaml
+
+patchesJson6902:
+- target:
+    group: extensions
+    version: v1beta1
+    kind: Ingress
+    name: ingress
+    path: ingress_patch.yaml
+    

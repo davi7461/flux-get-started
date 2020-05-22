@@ -5,6 +5,7 @@ resources:
 - namespaces/nginx-ingress-ns.yaml
 - go-sample/deployment.yaml
 - go-sample/service.yaml
+- go-sample/ingress.yaml
 - helm-releases/nginx.yaml
 - helm-releases/external-dns.yaml
 - go-try/1.yaml

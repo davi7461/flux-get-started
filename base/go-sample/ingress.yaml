@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: "go-sample-ingress"   
+  labels:
+    app: "go-sample-ingress"  
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-body-size: '0'
+    nginx.ingress.kubernetes.io/proxy-read-timeout: 3600
+    nginx.ingress.kubernetes.io/proxy-send-timeout: 3600
+spec:
+  rules:
+    - host: "*.com"
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: go-sample
+              servicePort: 80
+

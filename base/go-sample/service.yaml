@@ -6,7 +6,7 @@ metadata:
   labels:
     app: go-sample
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: go-sample
   ports:
