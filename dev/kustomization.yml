@@ -12,5 +12,6 @@ patchesJson6902:
     version: v1beta1
     kind: Ingress
     name: go-sample-ingress
+    namespace: demo
   path: go-sample/ingress_patch.yaml
     
