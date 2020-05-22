@@ -11,6 +11,6 @@ patchesJson6902:
     group: extensions
     version: v1beta1
     kind: Ingress
-    name: ingress
+    name: go-sample-ingress
   path: go-sample/ingress_patch.yaml
     
