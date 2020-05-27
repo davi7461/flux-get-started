@@ -4,7 +4,6 @@ bases:
 - ../base/
 patchesStrategicMerge:
 - go-sample/deployment.yaml
-- helm-releases/nginx.yaml
 
 patchesJson6902:
 - target:

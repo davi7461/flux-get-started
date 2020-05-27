@@ -4,4 +4,3 @@ bases:
 - ../base/
 patchesStrategicMerge:
 - helm-releases/external-dns.yaml
-- helm-releases/nginx.yaml
