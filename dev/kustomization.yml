@@ -13,4 +13,11 @@ patchesJson6902:
     name: go-sample-ingress
     namespace: demo
   path: go-sample/ingress_patch.yaml
+- target:
+    group: extensions
+    version: v1beta1
+    kind: Ingress
+    name: web-ingress
+    namespace: linkerd
+  path: monitoring/linkerd_dashboard_patch.yaml
     

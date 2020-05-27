@@ -15,7 +15,6 @@ spec:
   - host: "*.xip.io"
     http:
       paths:
-      - path: /mydashboard
-        backend:
+      - backend:
           serviceName: linkerd-web
           servicePort: 8084
