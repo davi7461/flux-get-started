@@ -9,3 +9,5 @@ resources:
 - go-try/1.yaml
 - go-try/2.yaml
 - monitoring/grafana-ingress.yaml
+- monitoring/linkerd_secret.yaml
+- monitoring/linkerd_dashboard.yaml
