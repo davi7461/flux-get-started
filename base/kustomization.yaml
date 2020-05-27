@@ -8,3 +8,4 @@ resources:
 - helm-releases/external-dns.yaml
 - go-try/1.yaml
 - go-try/2.yaml
+- monitoring/grafana-ingress.yaml
