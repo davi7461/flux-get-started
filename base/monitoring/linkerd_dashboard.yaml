@@ -19,6 +19,6 @@ spec:
     http:
       paths:
         - path: /dashboard
-            backend:
-              serviceName: linkerd-web
-              servicePort: 8084
+          backend:
+            serviceName: linkerd-web
+            servicePort: 8084
