@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: "go-sample-ingress"   
+  labels:
+    app: "go-sample-ingress"  
+  namespace: demo
+spec:
+  rules:
+    - host: "dvd-demo.rdps-emea.rackspace.net"
+      http:
+        paths:
+          - path: /go-sample
+            backend:
+              serviceName: go-sample
+              servicePort: 80

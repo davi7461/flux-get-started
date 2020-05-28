@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: demo
+  labels:
+    app: go-sample3
+  name: go-sample3
+  annotations:
+    fluxcd.io/automated: "true"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: go-sample3
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: go-sample3
+    spec:
+      containers:
+      - image: gcr.io/devops-ps-uk-default/david-go-sample:0.1
+        name: go-sample3
+        resources: {}
+      # imagePullSecrets:
+      #   - name: gcr-json-key

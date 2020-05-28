@@ -3,6 +3,6 @@ kind: Deployment
 metadata:
     annotations:
         fluxcd.io/automated: "true"
-        fluxcd.io/tag.nginx2: semver:~0.1
+        fluxcd.io/tag.go-sample: semver:~0.1
     name: go-sample
     namespace: demo

@@ -4,3 +4,5 @@ metadata:
   labels:
     name: demo
   name: demo
+  annotations:
+    linkerd.io/inject: enabled
