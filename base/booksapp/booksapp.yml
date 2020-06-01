@@ -168,34 +168,6 @@ spec:
         - name: service
           containerPort: 7002
 ---
-kind: Deployment
-apiVersion: apps/v1
-metadata:
-  name: traffic
-  labels:
-    app: traffic
-    project: booksapp
-    app.kubernetes.io/part-of: booksapp
-  namespace: books
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: traffic
-      project: booksapp
-  template:
-    metadata:
-      labels:
-        app: traffic
-        project: booksapp
-    spec:
-      dnsPolicy: ClusterFirst
-      containers:
-      - name: traffic
-        image: buoyantio/booksapp-traffic:v0.0.3
-        args:
-        - "-initial-delay=30s"
-        - "webapp:7000"
 
 apiVersion: extensions/v1beta1
 kind: Ingress

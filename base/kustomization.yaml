@@ -12,3 +12,4 @@ resources:
 - monitoring/linkerd_secret.yaml
 - monitoring/linkerd_dashboard.yaml
 - booksapp/booksapp.yml
+- booksapp/traffic.yml
