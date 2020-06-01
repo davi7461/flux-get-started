@@ -206,10 +206,10 @@ metadata:
   namespace: books
 spec:
   rules:
-    - host: "dvd-demo.rdps-emea.rackspace.net"
+    - host: "dvd-library.rdps-emea.rackspace.net"
       http:
         paths:
-          - path: /library
+          - path: /
             backend:
               serviceName: webapp
               servicePort: 7000
