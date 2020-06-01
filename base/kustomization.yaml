@@ -2,6 +2,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
 - namespaces/demo-ns.yaml
+- namespaces/books-ns.yaml
 - go-sample/deployment.yaml
 - go-sample/service.yaml
 - go-sample/ingress.yaml
@@ -10,3 +11,4 @@ resources:
 - go-try/2.yaml
 - monitoring/linkerd_secret.yaml
 - monitoring/linkerd_dashboard.yaml
+- booksapp/booksapp.yml
