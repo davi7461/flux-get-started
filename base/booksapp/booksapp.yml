@@ -209,7 +209,7 @@ spec:
     - host: "dvd-demo.rdps-emea.rackspace.net"
       http:
         paths:
-          - path: /books
+          - path: /library
             backend:
               serviceName: webapp
               servicePort: 7000
