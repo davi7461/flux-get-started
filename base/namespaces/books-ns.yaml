@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Namespace
 metadata:
   labels:
-    name: books-ns
-  name: books-ns
+    name: books
+  name: books
   annotations:
     linkerd.io/inject: enabled

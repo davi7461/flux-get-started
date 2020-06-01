@@ -23,7 +23,7 @@ metadata:
     app: webapp
     project: booksapp
     app.kubernetes.io/part-of: booksapp
-    namespace: books
+  namespace: books
 spec:
   replicas: 3
   selector:
@@ -63,6 +63,7 @@ metadata:
   labels:
     app: authors
     project: booksapp
+  namespace: books
 spec:
   selector:
     app: authors
