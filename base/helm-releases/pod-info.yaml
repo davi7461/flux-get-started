@@ -12,7 +12,7 @@ spec:
   releaseName: podinfo
   chart:
     repository: https://stefanprodan.github.io/podinfo
-    name: charts/podinfo
+    name: podinfo
     version: 4.0.2
   values:
     image: stefanprodan/podinfo:0.4.10
