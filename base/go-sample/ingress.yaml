@@ -14,3 +14,11 @@ spec:
             backend:
               serviceName: go-sample
               servicePort: 80
+          - path: /go-auto
+            backend:
+              serviceName: go-sample2
+              servicePort: 80
+          - path: /go-locked
+            backend:
+              serviceName: go-sample3
+              servicePort: 80
