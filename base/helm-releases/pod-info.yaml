@@ -6,11 +6,14 @@ metadata:
   labels:
     chart: podinfo
   annotations:
-    flux.weave.works/automated: "true"
-    flux.weave.works/tag.chart-image: sem:0.4
+    fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: semver:0.4
 spec:
   releaseName: podinfo
   chart:
     git: git@github.com:stefanprodan/podinfo
     path: charts/podinfo
     ref: master
+  values:
+    image: stefanprodan/podinfo:0.4.10
+    replicaCount: 3
