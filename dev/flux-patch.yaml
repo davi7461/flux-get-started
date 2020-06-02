@@ -10,7 +10,7 @@ spec:
       $setElementOrder/containers:
       - name: go-sample
       containers:
-      - image: gcr.io/devops-ps-uk-default/david-go-sample:0.1.4
+      - image: gcr.io/devops-ps-uk-default/david-go-sample:0.3.0
         name: go-sample
 ---
 apiVersion: apps/v1
