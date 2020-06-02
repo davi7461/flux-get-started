@@ -11,9 +11,9 @@ metadata:
 spec:
   releaseName: podinfo
   chart:
-    git: git@github.com:stefanprodan/podinfo
-    path: charts/podinfo
-    ref: master
+    repository: https://stefanprodan.github.io/podinfo
+    name: charts/podinfo
+    version: 4.0.2
   values:
     image: stefanprodan/podinfo:0.4.10
     replicaCount: 3
