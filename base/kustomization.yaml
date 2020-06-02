@@ -7,7 +7,6 @@ resources:
 - go-sample/service.yaml
 - go-sample/ingress.yaml
 - helm-releases/external-dns.yaml
-- helm-releases/minecraft.yaml
 - go-try/1.yaml
 - go-try/2.yaml
 - monitoring/linkerd_secret.yaml
