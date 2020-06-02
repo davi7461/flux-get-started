@@ -14,6 +14,3 @@ spec:
     repository: https://stefanprodan.github.io/podinfo
     name: podinfo
     version: 4.0.2
-  values:
-    image: stefanprodan/podinfo:0.4.10
-    replicaCount: 3
