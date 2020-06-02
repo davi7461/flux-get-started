@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: "podinfo-ingress"   
+  labels:
+    app: "podinfo-ingress"  
+  namespace: demo
+spec:
+  rules:
+    - host: "dvd-demo.rdps-emea.rackspace.net"
+      http:
+        paths:
+          - path: /podinfo
+            backend:
+              serviceName: podinfo
+              servicePort: 9898
