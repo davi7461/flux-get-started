@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: "minecraft-ingress"   
+  labels:
+    app: "minecraft-ingress"  
+  namespace: demo
+spec:
+  rules:
+    - host: "dvd-demo.rdps-emea.rackspace.net"
+      http:
+        paths:
+          - path: /minecraft
+            backend:
+              serviceName: minecraft
+              servicePort: 80

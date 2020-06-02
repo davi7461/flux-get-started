@@ -1,0 +1,13 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  annotations:
+    fluxcd.io/automated: "true"
+  name: minecraft
+  namespace: demo
+spec:
+  chart:
+    name: minecraft
+    repository: https://kubernetes-charts.storage.googleapis.com
+    version: 1.14.4
+  releaseName: minecraft
