@@ -24,7 +24,8 @@ spec:
         resources: {}
       # imagePullSecrets:
       #   - name: gcr-json-key
-
+---
+  
 apiVersion: v1
 kind: Service
 metadata:
