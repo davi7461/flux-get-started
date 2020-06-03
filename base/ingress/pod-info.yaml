@@ -7,10 +7,10 @@ metadata:
   namespace: demo
 spec:
   rules:
-    - host: "dvd-demo.rdps-emea.rackspace.net"
+    - host: "dvd-info.rdps-emea.rackspace.net"
       http:
         paths:
-          - path: /podinfo
+          - path: /
             backend:
               serviceName: podinfo
               servicePort: 9898
